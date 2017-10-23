@@ -4,40 +4,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/index.js"type="text/javascript" charset="utf-8"></script>
+<link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    
+<div data-role="panel" id="navPanel" data-display="reveal">
+    <a href="#pageone" class="ui-btn ui-btn-a">Page 1</a>
+    <a href="#pagetwo" class="ui-btn ui-btn-a">page 2</a>
+    <a href="#pagethree" class="ui-btn ui-btn-a">Page 3</a>
+</div>
 
 <div data-role="page" id="pageone">
-    <div data-role="panel" id="navPanel" data-display="reveal">
-        <a href="#pageone" class="ui-btn ui-btn-b">Page 1</a>
-        <a href="#pagetwo" class="ui-btn ui-btn-a">page 2</a>
-        <a href="#pagethree" class="ui-btn ui-btn-a">Page 3</a>
+    <div data-role="header" data-position="fixed">
+        <a href="#navPanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-notext"></a>
+        <h1>Page 1</h1>
     </div>
-    
-  <div data-role="header" data-position="fixed">
-    <a href="#navPanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-notext"></a>
-    <h1>Page 1</h1>
-  </div>
 
-  <div data-role="main" class="ui-content">
-    <img src="img/img1.png" alt="Heart Face" height="256" width="256">
-  </div>
+    <div data-role="main" class="ui-content">
+        <img src="img/img1.png" alt="Heart Face" height="256" width="256">
+    </div>
 
-  <div data-role="footer" data-position="fixed">
-    <a href="#pagetwo" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Next Page</a>
-  </div>
+    <div data-role="footer" data-position="fixed">
+        <a href="#pagetwo" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Next Page</a>
+    </div>
 </div> 
 
 <!--- PAGE CHANGE --->
 
 <div data-role="page" id="pagetwo">
-    <div data-role="panel" id="navPanel" data-display="reveal">
-        <a href="#pageone" class="ui-btn ui-btn-a">Page 1</a>
-        <a href="#pagetwo" class="ui-btn ui-btn-b">page 2</a>
-        <a href="#pagethree" class="ui-btn ui-btn-a">Page 3</a>
-    </div>
-    
     <div data-role="header" data-position="fixed">
         <a href="#navPanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-notext"></a>
         <h1>Page 2</h1>
@@ -56,12 +52,6 @@
 <!--- PAGE CHANGE --->
 
 <div data-role="page" id="pagethree">
-    <div data-role="panel" id="navPanel" data-display="reveal">
-        <a href="#pageone" class="ui-btn ui-btn-a">Page 1</a>
-        <a href="#pagetwo" class="ui-btn ui-btn-a">page 2</a>
-        <a href="#pagethree" class="ui-btn ui-btn-b">Page 3</a>
-    </div>
-    
     <div data-role="header" data-position="fixed">
         <a href="#navPanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-notext"></a>
         <h1>Page 3</h1>
