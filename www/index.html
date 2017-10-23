@@ -9,13 +9,19 @@
 <body>
 
 <div data-role="page" id="pageone">
+    <div data-role="panel" id="navPanel" data-display="reveal">
+        <a href="pageone" class="ui-btn ui-shadow">Page 1</a>
+        <a href="pagetwo" class="ui-btn ui-shadow">page 2</a>
+        <a href="pagethree" class="ui-btn ui-shadow">Page 3</a>
+    </div>
+    
   <div data-role="header" data-position="fixed">
+    <a href="#navPanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-notext"></a>
     <h1>Page 1</h1>
   </div>
 
   <div data-role="main" class="ui-content">
     <img src="img/img1.png" alt="Heart Face" height="256" width="256">
-    <!--<a href="#pagetwo">Next Page</a>-->
   </div>
 
   <div data-role="footer" data-position="fixed">
@@ -26,35 +32,49 @@
 <!--- PAGE CHANGE --->
 
 <div data-role="page" id="pagetwo">
-  <div data-role="header" data-position="fixed">
-    <h1>Page 2</h1>
-  </div>
+    <div data-role="panel" id="navPanel" data-display="reveal">
+        <a href="pageone" class="ui-btn ui-shadow">Page 1</a>
+        <a href="pagetwo" class="ui-btn ui-shadow">page 2</a>
+        <a href="pagethree" class="ui-btn ui-shadow">Page 3</a>
+    </div>
+    
+    <div data-role="header" data-position="fixed">
+        <a href="#navPanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-notext"></a>
+        <h1>Page 2</h1>
+    </div>
 
-  <div data-role="main" class="ui-content">
-    <img src="img/img2.png" alt="Moody Face" height="256" width="256">
-  </div>
+    <div data-role="main" class="ui-content">
+        <img src="img/img2.png" alt="Moody Face" height="256" width="256">
+    </div>
 
-  <div data-role="footer">
-    <a href="#pageone" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left">Previous Page</a>
-    <a href="#pagethree" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Next Page</a>
-  </div>
+    <div data-role="footer" data-position="fixed">
+        <a href="#pageone" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left">Previous Page</a>
+        <a href="#pagethree" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Next Page</a>
+    </div>
 </div> 
 
 <!--- PAGE CHANGE --->
 
 <div data-role="page" id="pagethree">
-  <div data-role="header" data-position="fixed">
-    <h1>Page 3</h1>
-  </div>
+    <div data-role="panel" id="navPanel" data-display="reveal">
+        <a href="pageone" class="ui-btn ui-shadow">Page 1</a>
+        <a href="pagetwo" class="ui-btn ui-shadow">page 2</a>
+        <a href="pagethree" class="ui-btn ui-shadow">Page 3</a>
+    </div>
+    
+    <div data-role="header" data-position="fixed">
+        <a href="#navPanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-notext"></a>
+        <h1>Page 3</h1>
+    </div>
 
-  <div data-role="main" class="ui-content">
-    <img src="img/img3.png" alt="Dog Face" height="256" width="256">
-  </div>
+    <div data-role="main" class="ui-content">
+        <img src="img/img3.png" alt="Dog Face" height="256" width="256">
+    </div>
 
-  <div data-role="footer" data-position="fixed">
-    <a href="#pagethree" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left">Previous Page</a>
-    <a href="#pageone" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-right">back to Start</a>
-  </div>
+    <div data-role="footer" data-position="fixed">
+        <a href="#pagethree" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left">Previous Page</a>
+        <a href="#pageone" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-right">back to Start</a>
+    </div>
 </div>  
 </body>
 </html>
