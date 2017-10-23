@@ -10,12 +10,12 @@
 
 <div data-role="page" id="pageone">
   <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
+    <h1>Page 1</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <p>Welcome! If you click on the link below, it will take you to Page Two.</p>
-    <a href="#pagetwo">Go to Page Two</a>
+    <img src="img/img1.png" alt="Heart Face" height="256" width="256">
+    <a href="#pagetwo">Next Page</a>
   </div>
 
   <div data-role="footer">
@@ -27,12 +27,13 @@
 
 <div data-role="page" id="pagetwo">
   <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
+    <h1>Page 2</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
-    <a href="#pageone">Go to Page One</a>
+    <img src="img/img2.png" alt="Moody Face" height="256" width="256">
+    <a href="#pageone">Previous Page</a>
+    <a href="#pagethree">Next Page</a>
   </div>
 
   <div data-role="footer">
@@ -40,5 +41,22 @@
   </div>
 </div> 
 
+<!--- PAGE CHANGE --->
+
+<div data-role="page" id="pagethree">
+  <div data-role="header">
+    <h1>Page 3</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <img src="img/img3.png" alt="Dog Face" height="256" width="256">
+    <a href="#pagetwo">Previous Page</a>
+    <a href="#pageone">Back to Start</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div>  
 </body>
 </html>
